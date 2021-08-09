@@ -95,7 +95,7 @@ def google_analytics_reporting_api_data_extraction(viewID,dim,met,start_date,end
          print("error occured in the google analytics reporting api data extraction")
 
 
-viewID='230226059'
+viewID=''
 dim=['ga:browser','ga:sourceMedium']
 met=['ga:users','ga:goalXXCompletions']
 start_date='2021-01-01'
