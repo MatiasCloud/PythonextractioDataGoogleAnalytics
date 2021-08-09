@@ -31,10 +31,10 @@ def getUserBrowsers():
    
     
     client_id = '' 
-    client_secret = '5uzOPV7GUK56uMrKw0iWpX3q'
+    client_secret = ''
     refresh_token = get_refresh_token (client_id, client_secret)
     refresh_token=refresh_token
-    viewID='230226059'
+    viewID=''
     dim=['ga:browser','ga:sourceMedium']
     met=['ga:users','ga:goalXXCompletions']
     start_date= fechaIni 
@@ -43,7 +43,7 @@ def getUserBrowsers():
     goal_number='1'
     condition='&sort=-ga%3Ausers' 
     if tipo == 'devices':
-        viewID='230226059'
+        viewID=''
         dim=["ga:deviceCategory"]
         met=["ga:visits"]
         start_date=fechaIni
@@ -53,7 +53,7 @@ def getUserBrowsers():
         refresh_token=refresh_token
         condition=''  
     if tipo == 'usuariosxciudad':
-        viewID='230226059'
+        viewID=''
         dim=["ga:city"]
         met=["ga:users"]
         start_date=fechaIni
@@ -65,7 +65,7 @@ def getUserBrowsers():
         
         
     if tipo == 'nuevosUsuarios':
-        viewID='230226059'
+        viewID=''
         dim=[]
         met=["ga:newUsers"]
         start_date=fechaIni
@@ -75,7 +75,7 @@ def getUserBrowsers():
         refresh_token=refresh_token
         condition=''     
     if tipo == 'usuariosactivoxdia':
-        viewID='230226059'
+        viewID=''
         dim=["ga:date"]
         met=["ga:1dayUsers"]
         start_date=fechaIni
@@ -86,7 +86,7 @@ def getUserBrowsers():
         condition='' 
         
     if tipo == 'userultimos7dias':
-        viewID='230226059'
+        viewID=''
         dim=["ga:date"]
         met=["ga:users"]
         start_date='7daysAgo'
@@ -96,7 +96,7 @@ def getUserBrowsers():
         refresh_token=refresh_token
         condition=''      
     if tipo == 'referral':
-        viewID='230226059'
+        viewID=''
         dim=["ga:medium","ga:source"]
         met=["ga:users"]
         start_date=fechaIni
@@ -107,7 +107,7 @@ def getUserBrowsers():
         condition='' 
    
     if tipo == 'usuariosxinifin':        
-        viewID='230226059'
+        viewID=''
         dim=["ga:date"]
         met=["ga:users"]
         start_date=fechaIni
