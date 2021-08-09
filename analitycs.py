@@ -34,8 +34,8 @@ def get_refresh_token(client_id,client_secret):
   
     return(refresh_token)
 
-client_id = '233585367017-c335n8f86ifudgbiofbp7ql0pk90bjje.apps.googleusercontent.com' 
-client_secret = '5uzOPV7GUK56uMrKw0iWpX3q'
+client_id = '' 
+client_secret = ''
 refresh_token = get_refresh_token (client_id, client_secret)
 
 ''' function return the google analytics data for given dimension, metrics, start data, end data access token, type,goal number, condition'''
